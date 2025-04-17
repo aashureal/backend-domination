@@ -23,7 +23,7 @@ fs.readFile("./files/f1.txt", "utf8", (err, data) => {
 });
 
 // Rename File
-fs.rename("./files/f2.txt", "newName.txt", (err) => {
+fs.rename("./files/f2.txt", "./files/newName.txt", (err) => {
   if (err) throw err;
   console.log("File Deleted!");
 });
